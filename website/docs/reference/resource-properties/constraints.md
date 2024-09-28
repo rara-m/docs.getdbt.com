@@ -46,7 +46,7 @@ models:
     constraints:
       - type: primary_key
         columns: [FIRST_COLUMN, SECOND_COLUMN, ...]
-      - type: FOREIGN_KEY # multi_column
+      - type: foreign_key # multi_column
         columns: [FIRST_COLUMN, SECOND_COLUMN, ...]
         expression: "OTHER_MODEL_SCHEMA.OTHER_MODEL_NAME (OTHER_MODEL_FIRST_COLUMN, OTHER_MODEL_SECOND_COLUMN, ...)"
       - type: check
